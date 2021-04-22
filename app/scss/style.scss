@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,700;1,300;1,600&family=PT+Sans:wght@400;700&display=swap');
+
+$gray: #bdbdbd;
+$background: #e6e6e6;
+$line-color: $background;
+$text-color: black;
+$gray-text: #737373;
+$green: #60a564;
+$green-light: #48974c;
+$green-dark: #1f8424;
+$width-wrapper: 1134px;
+$height-btn: 54px;
+$width-btn: 155px;
+$footer-bg-color: #404040;
+$footer-text-color: #808080; 
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+//Шапка и меню
+@import "menu.scss";
+
+//Слайдер
+@import "slider.scss";
+
+//Контент
+@import "content.scss";
+
+//Ход строительства
+@import "building.scss";
+
+//Баннер
+@import "advertising.scss";
+
+//Подвал
+@import "footer.scss";
+
+@keyframes fade {
+  from {
+      opacity: 0.4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+@import "media.scss";

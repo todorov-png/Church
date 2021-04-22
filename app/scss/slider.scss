@@ -1,0 +1,49 @@
+.slider {
+  position: relative;
+  &-item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    img {
+      vertical-align: top;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  &-banner{
+    position: absolute;
+    top: calc((100% - 398px)/2);
+    left: calc((100vw - #{$width-wrapper})/2);
+    width: 550px;
+    &__block {
+      background-color: rgba($background, 0.9);
+      font-family: 'Cormorant Infant', serif;
+      padding: 40px;
+      h3 {
+        margin: 0;
+        font-size: 60px;
+        line-height: 70px;
+      }
+      p {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+    }
+    &__btn {
+      margin-top: 30px;
+      margin-left: 40px;
+      a { 
+        border-radius: 10px; 
+        display: inline-block; 
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        background-color:rgba(white, 0.7);
+        &:hover { 
+          cursor: pointer;
+          background-color:rgba(white, 1);
+        }
+      }
+    }
+  }
+}
